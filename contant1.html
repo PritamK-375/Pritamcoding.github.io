@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contant</title>
+    <link rel="stylesheet" href="css/contant.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <div class="logo">
+                <img src="images/logo.jpg" alt="">
+                <div class="name">PritamCoding</div>
+            </div>
+            <li class="btn"><span class="fa fa-bars"></span></li>
+            <div class="item">
+                <li class="nav-item"><a href="project.html#home" class="active">Home</a></li>
+                <li class="nav-item"><a href="project.html#services-contanor">Service</a></li>
+                <li class="nav-item"><a href="project.html#clients">Our Clients</a></li>
+                <li class="nav-item"><a href="project.html#contact-us">Contact Us</a></li>
+            </div>
+            
+        </ul>
+    </nav>
+    <script>
+        btn = document.querySelector('.btn')
+        navbar = document.querySelector('.navbar')
+        item = document.querySelector('.item')
+
+
+
+        btn.addEventListener('click', () => {
+            item.classList.toggle('show')
+            navbar.classList.toggle('show')
+        })
+    </script>
+    <section>
+        <div class="solution">
+            <h1 class="h-primary">Logic</h1>
+            <p>This is the first project which you will learn to print something on the screen in C program.</p>
+        </div>
+        <div class="code">
+            <h1 class="h-primary">Print Reverse an Array</h1>
+            <code class="cpp">
+            <p>
+                
+                <span class="meta-keyword">#include</span>
+                <span class="meta-title">&lt;stdio.h&gt;
+                </span>
+            </p>
+            <p>
+                <span class="keyword">int</span>
+                <span>main() {</span>
+            </p>
+            <p>
+                <span class="co-in">printf</span> (" <span class="inpu">Hello, World!</span>")
+            </p>
+            <p><span class="keyword">return</span><span class="number"> 0</span>;</p>
+            <p>}</p>
+            </code>
+            <div class="output">
+                <h2 class="h-secondary">Output</h2>
+                <div class="out">
+                <p>Hello, World!</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+</body>
+
+</html>

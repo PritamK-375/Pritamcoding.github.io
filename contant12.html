@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contant</title>
+    <link rel="stylesheet" href="css/contant.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <div class="logo">
+                <img src="images/logo.jpg" alt="">
+                <div class="name">PritamCoding</div>
+            </div>
+            <li class="btn"><span class="fa fa-bars"></span></li>
+            <div class="item">
+                <li class="nav-item"><a href="project.html#home" class="active">Home</a></li>
+                <li class="nav-item"><a href="project.html#services-contanor">Service</a></li>
+                <li class="nav-item"><a href="project.html#clients">Our Clients</a></li>
+                <li class="nav-item"><a href="project.html#contact-us">Contact Us</a></li>
+            </div>
+            
+        </ul>
+    </nav>
+    <script>
+        btn = document.querySelector('.btn')
+        navbar = document.querySelector('.navbar')
+        item = document.querySelector('.item')
+
+
+
+        btn.addEventListener('click', () => {
+            item.classList.toggle('show')
+            navbar.classList.toggle('show')
+        })
+    </script>
+    <section>
+        <div class="solution">
+            <h1 class="h-primary">Logic</h1>
+            <p>This algorithm in real does not produces a reversed array. Instead it just prints array in reverse order.
+                If you are looking to reverse the elements then skip to next logic. So here goes step by step
+                descriptive logic to print array in reverse order.</p>
+            <p class="p1">1.Input size and elements in array from user. Store it in some variable say <span class="text">size</span> and <span class="text">a[]</span>. </p>
+            <p class="p1">2.Run a loop from size - 1 to 0 in decremented style. The loop structure should look like <span class="text">for(i=size-1;
+                i>=0; i--)</span>.</p>
+            <p class="p1">3.Inside loop print current array element i.e. <span class="text">a[i]</span>.</p>
+        </div>
+        <div class="code">
+            <h1 class="h-primary">Print Reverse an Array</h1>
+            <code class="cpp">
+            <p>
+                
+                <span class="meta-keyword">#include</span>
+                <span class="meta-title">&lt;stdio.h&gt;
+                </span>
+            </p>
+            <p>
+                <span class="keyword">int</span>
+                <span>main() {</span>
+            </p>
+            <p>
+                    <span class="keyword">int </span>a[<span class="number">100</span>],i, j, Size;
+            </p>
+            <p>
+                <span class="co-in">printf</span> ("\n <span class="inpu">Please Enter the size of an array:</span>");
+            </p>
+            <p>
+
+                <span class="co-in">scanf</span>("<span class="datatype">%d</span>",&Size);
+            </p>  
+            <p>
+
+                <span class="keyword">for</span>(i =<span class="number">0</span>; i < Size; i++){ 
+            </p>     
+             
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="co-in">scanf</span>("<span class="datatype">%d</span>", &a[i]);
+
+            </p>        
+            <p>}</p>   
+                  
+            <p>j = i -<span class="number">1</span>; </p>   
+            <p><span class="co-in">printf</span> ("\n <span class="inpu">Result of an Reverse array is:</span>");</p>
+            <p>for (i = j; i >=<span class="number">0</span>; i--) 
+            {</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;  printf("<span class="datatype">%d</span> \t", a[i]);</p>
+            <p>}</p> 
+            <p><span class="keyword">return</span><span class="number"> 0</span>;</p>
+            <p>}</p>
+            </code>
+            <div class="output">
+                <h2 class="h-secondary">Output</h2>
+                <div class="out">
+                <p>Please Enter the size of an array:5 </p>
+                <p>10 20 30 40 50 </p>
+                <p>Result of an Reverse array is:50 40 30 20 10</p>    
+                </div>
+
+            </div>
+        </div>
+    </section>
+   
+</body>
+
+</html>

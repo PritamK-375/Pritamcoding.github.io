@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topics</title>
+    <link rel="stylesheet" href="css/contant-topic.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <div class="logo">
+                <img src="images/logo.jpg" alt="">
+                <div class="name">PritamCoding</div>
+            </div>
+            <li class="btn"><span class="fa fa-bars"></span></li>
+            <div class="item">
+                <li class="nav-item"><a href="project.html#home" class="active">Home</a></li>
+                <li class="nav-item"><a href="project.html#services-contanor">Service</a></li>
+                <li class="nav-item"><a href="project.html#clients">Our Clients</a></li>
+                <li class="nav-item"><a href="project.html#contact-us">Contact Us</a></li>
+            </div>
+            
+        </ul>
+    </nav>
+    <script>
+        btn = document.querySelector('.btn')
+        navbar = document.querySelector('.navbar')
+        item = document.querySelector('.item')
+
+
+
+        btn.addEventListener('click', () => {
+            item.classList.toggle('show')
+            navbar.classList.toggle('show')
+        })
+    </script>
+    <section class="topic">
+        <div class="box">
+            <label>LANGUAGE PROFICIENCY</label>
+            <h1 class="h-primary">C Programming Tutorials</h1>
+            <a href="C_program-topics.html" class="btn1"><button>Start Tutorial</button></a>
+        </div>
+        <div class="box">
+            <label>LANGUAGE PROFICIENCY</label>
+            <h1 class="h-primary">Data Structures Tutorials</h1>
+            <a href="#" class="btn1"><button>Start Tutorial</button></a>
+        </div>
+        <div class="box" >
+            <label>LANGUAGE PROFICIENCY</label>
+            <h1 class="h-primary">C Programming Tutorials</h1>
+            <a href="#" class="btn1"><button>Start Tutorial</button></a>
+        </div>
+    </section>
+    
+</body>
+</html>

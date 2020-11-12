@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignUp</title>
+  <link rel="stylesheet" href="css/signup.css">
+  <link href="http://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" media="screen and (max-width:800px)" href="css/signup-phn.css">
+  <script src="js/signup.js"></script>
+</head>
+
+<body>
+
+  <div class="signup">
+    <h1>Sign Up</h1>
+    <div class="box">
+      <i class="fa fa-user-circle" aria-hidden="true"></i>
+      <input type="name" placeholder="Username" name="value">
+    </div>
+    <div class="box" id="pass">
+      <i class="fa fa-lock" aria-hidden="true"></i>
+      <input type="password" placeholder="Create Password" name="value" id="password1">
+      <i class="fa fa-eye" aria-hidden="true" id="eye1" onclick="toggle1()"></i>
+    </div>
+    <div class="box" id="pass">
+      <i class="fa fa-lock" aria-hidden="true"></i>
+      <input type="password" placeholder="Conform Password" name="value" id="password2">
+      <i class="fa fa-eye" aria-hidden="true" id="eye2" onclick="toggle2()"></i>
+    </div>
+
+    <input class="btn" type="button" name="" value="Sign Up"><br>
+  </div>
+
+</body>
+
+</html>

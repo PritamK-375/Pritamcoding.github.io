@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link rel="stylesheet" href="css/login.css">
+  <link href="http://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" media="screen and (max-width:800px)" href="css/login-phn.css">
+  <script src="js/login.js"></script>
+</head>
+
+<body>
+
+  <div class="login">
+    <h1>Login</h1>
+    <div class="box">
+      <i class="fa fa-user-circle" aria-hidden="true"></i>
+      <input type="name" placeholder="Username" name="value" id="username">
+    </div>
+    <div class="box" id="pass">
+      <i class="fa fa-lock" aria-hidden="true"></i>
+      <input type="password" placeholder="Password" name="value" id="password">
+      <i class="fa fa-eye" aria-hidden="true" id="eye" onclick="toggle()"></i>
+    </div>
+    <input class="btn" type="button" name="" value="Log In" onclick="valid()"><br>
+    <a href="#">Forgot password?</a>
+  </div>
+
+</body>
+
+</html>

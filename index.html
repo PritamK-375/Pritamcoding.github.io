@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PriamCoding</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="css/phn.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <div class="logo">
+                <img src="images/logo.jpg" alt="">
+                <div class="name">PritamCoding</div>
+            </div>
+            <li class="btn"><span class="fa fa-bars"></span></li>
+            <div class="item">
+                <li class="nav-item"><a href="#home" class="active">Home</a></li>
+                <li class="nav-item"><a href="#services-contanor">Service</a></li>
+                <li class="nav-item"><a href="#clients">Our Clients</a></li>
+                <li class="nav-item"><a href="#contact-us">Contact Us</a></li>
+            </div>
+            <div class="search-icon">
+                <input type="text" class="search" placeholder="Search this Website">
+                <a href="#"><button id="scr-btn"><img src="images/icon.png" alt=""></botton></a>
+            </div>
+        </ul>
+    </nav>
+    <script>
+        btn = document.querySelector('.btn')
+        navbar = document.querySelector('.navbar')
+        item = document.querySelector('.item')
+
+        btn.addEventListener('click', () => {
+            item.classList.toggle('show')
+            navbar.classList.toggle('show')
+        })
+    </script>
+    <section id="home">
+        <div class="h1">
+            <h1 class="h-primary center">Welcome to MyOnlineSite</h1>
+            <p class="primary">This is a best website to learn Coding languages.</p>
+        </div>
+        <div class="sign-in">
+            <p class="old">For Better Experience</p>
+            <a href="login.html"><button class="btn1">Log In</button></a>
+            <!-- <p>If you are New in this website then</p> -->
+            <a href="signup.html" class="creat">creat new account?</a>
+        </div>
+    </section>
+    <section id="services-contanor">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box" id="cp">
+                <img src="images/c.jpg" alt="">
+                <!-- <h2 class="h-secondary center">C Programming</h2> -->
+                <p class="primary">C is a powerdul general-purpose programming language.it can be wsed to devlop
+                    softwere like operating system,databases,complilers and so on.C programming is an excellent language
+                    to learn to program for beginners.</p>
+            </div>
+            <div class="box" id="ds">
+                <img src="images/ds.png" alt="">
+                <!-- <h1 class="h-secondary center">Data Structure</h1> -->
+                <p class="primary">In computer science a data structure is a data organization,management,and storage
+                    format that enables efficient aceess and modification.More precisely,a data structure is a
+                    cillection of data values the responships among them,and the functions or operations that can be
+                    applied to the data. </p>
+            </div>
+            <div class="box" id="cpp">
+                <img src="images/c++.png" alt="">
+                <!-- <h1 class="h-secondary center">C++ Programming</h1> -->
+                <p class="primary">C++ is a powerdul general-purpose programming language.It can be used to develop
+                    operating systens,browsers,games,and so on.C++ supports different ways of programming like
+                    procedural,object-oriented,functional,and so on.This makes C++ powerful as well as flexible.</p>
+            </div>
+        </div>
+    </section>
+    <section id="clients">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="about-box">
+            <div class="about-item">
+                <img src="images/Clint1.png" alt="">
+            </div>
+            <div class="about-item">
+                <img src="images/Clint2.jpg" alt="">
+            </div>
+            <div class="about-item">
+                <img src="images/Clint3.png" alt="">
+            </div>
+            <div class="about-item">
+                <img src="images/Clint4.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="contact-us">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="form">
+                    <label for="name">E-mail:</label>
+                    <input type="email" name="name" id="email" placeholder="Enter Your E-mail ID">
+                </div>
+                <div class="form">
+                    <label for="name">Phone No :</label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter Your Phone NO.">
+                </div>
+                <div class="form">
+                    <label for="name">Massege:</label>
+                    <textarea name="massage" id="massage" cols="30" rows="10" placeholder="For Your Quary"></textarea>
+                </div>
+                <div class="form">
+                    <button id="submit">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            CopyRight &copy;www.PritamCoding.com.
+        </div>
+    </footer>
+
+</body>
+
+</html>
