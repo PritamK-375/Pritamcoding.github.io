@@ -2,7 +2,7 @@
    
 } */
 nav{
-    padding: 2px 33px 2px 3px;
+    padding: 2px 30px 2px 1px;
     position: fixed;
     width: 91%;
     z-index: 1;
@@ -33,7 +33,7 @@ nav ul .item{
     transition: top .4s;
 }
 nav ul .item.show{
-    top: 60px;
+    top: 61px;
 }
 .search{
     width: 145px;
