@@ -2,6 +2,7 @@
    
 } */
 nav{
+    padding: 2px 33px 2px 1px;
     position: fixed;
     width: 91%;
     z-index: 1;
@@ -26,13 +27,14 @@ nav ul .item{
     top: -270px;
     right: 0;
     width: 100%;
+
     background-color: black;
     /* opacity: 1.6; */
     display: inline-block;
     transition: top .4s;
 }
 nav ul .item.show{
-    top: 61px;
+    top: 60px;
 }
 .search{
     width: 145px;
