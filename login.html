@@ -27,7 +27,22 @@
     </div>
     <input class="btn" type="button" name="value " value="Log In" onclick="valid()"><br>
     <a href="#">Forgot password?</a>
-  </div>
+  </div
+<script>
+function valid(){
+    var user=document.getElementById("username").value;
+    var pass=document.getElementById("password").value;
+
+    if(user=="admin"&& pass=="1234"){
+        alert("login succesfully");
+        document.location.href="contant-topic.html";
+        return false;
+    }
+    else{
+        alert("login faild");
+        return true;
+    }
+</script>
 
 </body>
 
