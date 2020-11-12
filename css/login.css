@@ -83,7 +83,7 @@ body{
     background: white;
 }
 
-.login a{
+.forget {
     text-decoration: none;
     color: rgb(43, 109, 209);
     margin-top: 12px;
@@ -91,6 +91,6 @@ body{
     font-size: 14px;
     float: left;
 }
-.login a:hover{
+.forget :hover{
     text-decoration: underline;
 }
