@@ -1,0 +1,29 @@
+
+body{
+    background: url('../images/bg2.jpg') no-repeat center center/cover;
+    height: 800px;
+    width: 656px;
+}
+
+.signup{
+    width: 210px;
+}
+.signup h1 {
+    font-size: 30px;
+}
+.box{
+    font-size: 16px;
+}
+.box i{
+    width: 20px;
+}
+.btn{
+    width: 25%;
+    font-size: 9px;
+}
+.btn:hover{
+    font-size: 10px;
+}
+.signup a{
+    font-size: 12px;
+}

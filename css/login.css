@@ -1,0 +1,96 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Open Sans',sans-serif;
+    background-image: url('../images/bg2.jpg') ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+
+.login{
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+.login h1{
+    /* float: left; */
+    display: inline-block;
+    font-size: 45px;
+    border-bottom: 3px solid green;
+    margin-bottom: 40px;
+    padding: 10px 0;
+}
+
+.box{
+    width: 100%;
+    font-size: 24px;
+    overflow: hidden;
+    padding: 10px 0;
+    margin-bottom: 10px ;
+    border-bottom: 1px solid green;
+}
+
+.box i{
+    width: 24px;
+    float: left;
+    text-align: center;
+}
+#pass{
+    position: relative;
+}
+
+#eye{
+    width: 13px;
+    float: right;
+    position: absolute;
+    top: 6px;
+    right: 20px;
+    text-align: center;
+}
+
+
+.box input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 15px;
+    width: 80%;
+    float: left;
+    margin: 0 5px;
+}
+.btn{
+    width: 20%;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 9px;
+}
+.btn:hover{
+    color: rgb(43, 109, 209);
+    font-size: 12px;
+    cursor: pointer;
+    background: white;
+}
+
+.login a{
+    text-decoration: none;
+    color: rgb(43, 109, 209);
+    margin-top: 12px;
+    padding: 2px;
+    font-size: 14px;
+    float: left;
+}
+.login a:hover{
+    text-decoration: underline;
+}

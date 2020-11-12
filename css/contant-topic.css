@@ -1,0 +1,221 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(212, 212, 212);
+}
+/* html{
+    scroll-behavior: smooth;
+} */
+/*navigation bar*/
+
+
+nav{
+   
+    padding: 2px 28px 2px 11px;
+    position: sticky;
+    font-family: 'Baloo Bhai 2',cursive;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+nav .logo{
+    flex: 1;
+    font-size: 16px;
+    color: white;
+
+}
+.logo img {
+    margin-left: 14px;
+    height: 38px;
+    width: 61px;
+    border-radius: 28px;
+    margin-bottom: -8px;
+}
+nav .item{
+    padding: 0 25px;
+    display: inline-flex;
+    
+}
+nav .item a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 0 12px;
+    color: white;
+}
+.name {
+    margin: 1px 2px;
+    font-size: 15px;
+    color: white;
+}
+nav ul li{
+    font-size: 13px;
+    padding: 4px;
+
+}
+nav::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+nav .btn{
+    font-size: 19px;
+    color: white;
+    display: none;
+}
+nav .btn span{
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+nav .btn span.show:before{
+    content: '/f00d';
+}
+.h-primary{
+    font-size: 2.0rem;
+    color: rgb(1, 46, 1);
+    font-family:'Open Sans',sansserif;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    color: rgb(1, 46, 1);
+    font-family:'Open Sans',sansserif;
+    padding-top: 10px;
+}
+label{
+    font-size: 12px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    border: none;
+    position: relative;
+    width: 96%;
+    height: 150px;
+    background-color: rgb(253, 245, 245);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.box1{
+    border: none;
+    position: relative;
+    width: 90%;
+    height: 108px;
+    background-color: rgb(253, 245, 245);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.btn1{
+   position: absolute;
+   top: 116px;
+   left: 14px;
+   width: 60%;
+}
+.btn2{
+    position: absolute;
+    top: 85px;
+    left: 14px;
+   width: 20%;
+}
+button{
+    font-size: 17px;
+    color: #034803;
+    border: 2px solid #048604;
+    border-radius: 8px;
+    width: 100%;
+}
+
+
+.center{
+    text-align: center;
+    font-family:'Open Sans',sansserif;
+}
+@media screen and (max-width:800px){
+nav{
+        padding: 2px 33px 2px 3px;
+        position: sticky;
+        width: 91%;
+        z-index: 1;
+}
+nav::before{
+        content: "";
+        position: absolute;
+        background-color: black;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        opacity: 1.6;
+        z-index: -1;
+}
+nav .btn{
+        display: block;
+        flex: 0;
+}
+nav ul .item{
+        position: fixed;
+        top: -270px;
+        right: 0;
+        width: 100%;
+        background-color: black;
+        /* opacity: 1.6; */
+        display: inline-block;
+        transition: top .4s;
+}
+nav ul .item.show{
+        top: 61px;
+}
+    
+    
+/* nav ul .item.hidden{
+        top: -270px;
+}
+nav ul .nav-item.hidden{
+        top: -270px;
+} */
+nav ul .item li{
+        text-align: center;
+        line-height: 20px;
+        margin: 30px 0;
+}
+nav ul .item li a{
+        font-size: 19px;
+}
+.box{
+        width: 90%;
+        margin: 8px;
+}
+button{
+    font-size: 14px;
+
+}
+.h-primary {
+        font-size: 1.7rem;
+}
+.h-secondary {
+    font-size: 1.2rem;
+}
+
+footer{
+    font-size: 13px;
+}
+}

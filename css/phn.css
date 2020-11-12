@@ -1,0 +1,144 @@
+/* body{
+   
+} */
+nav{
+    padding: 2px 33px 2px 3px;
+    position: fixed;
+    width: 91%;
+    z-index: 1;
+}
+nav::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 1.6;
+    z-index: -1;
+}
+nav .btn{
+    display: block;
+    flex: 0;
+}
+nav ul .item{
+    position: fixed;
+    top: -270px;
+    right: 0;
+    width: 100%;
+    height: 36%;
+    background-color: black;
+    /* opacity: 1.6; */
+    display: inline-block;
+    transition: top .4s;
+}
+nav ul .item.show{
+    top: 61px;
+}
+.search{
+    width: 145px;
+    font-size: 15px;
+}
+
+/* nav ul .item.hidden{
+    top: -270px;
+}
+nav ul .nav-item.hidden{
+    top: -270px;
+} */
+nav ul .item li{
+    text-align: center;
+    line-height: 20px;
+    margin: 30px 0;
+}
+nav ul .item li a{
+    font-size: 19px;
+}
+
+
+#home{
+    padding: 5px 24px;
+    height: 409px;
+}
+.sign-in{
+    width: 228px;
+}
+.old {
+    font-size: 1.0rem;
+}
+.btn1{
+    font-size: 11px;
+}
+.creat {
+    font-size: 13px;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    font-size:17px;
+    background-color: rgb(9, 153, 179);
+    border-radius: 5px;
+}
+.primary {
+    font-size: 16px;
+    padding: 8px;
+}
+#home::before{
+    height: 410px;
+}
+.nav ul li a:hover, .nav ul li a.active{
+    font-size: 14px;
+}
+.nav ul li a {
+    padding: 5px 10px;
+}
+#services{
+    flex-flow: column;
+}
+#services .box {
+    padding: 6px;
+    margin: 3px;
+}
+#cp img {
+    height: 162px;
+    width: 89%;
+}
+#ds img {
+    height: 162px;
+    width: 89%;
+}
+#cpp img {
+    height: 162px;
+    width: 89%;
+}
+#about-box {
+    flex-wrap: wrap;
+}
+.about-item {
+    padding: 7px;
+    z-index: -1;
+}
+#about-box img {
+    width: 62px;
+}
+
+
+#contact-box label {
+    font-size: 13px;
+}
+#contact-box{
+    padding-bottom: 10px;
+}
+#contact-box input, #contact-box textarea {
+    font-size: 13px;
+    width: 102%;
+}
+/* utility classes */
+.h-primary {
+    font-size: 1.8rem;
+}
+
+footer{
+    font-size: 13px;
+}
+
